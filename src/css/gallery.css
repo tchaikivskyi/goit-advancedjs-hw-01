@@ -1,0 +1,81 @@
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.gallery {
+  width: 100%;
+  max-width: 1128px;
+  display: grid;
+  gap: 16px;
+  margin: 16px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 200px;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.gallery-link,
+.gallery-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-link img {
+  object-fit: cover;
+}
+
+@media (min-width: 400px) {
+  .gallery-item {
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    width: calc(720px + 24px * 3);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+    margin: 24px auto;
+  }
+}
+
+@media (min-width: 1176px) {
+  .gallery {
+    width: calc(1128px + 24px * 3);
+    grid-template-columns: repeat(3, 360px);
+    gap: 24px;
+  }
+}
+
+/* SLIDER */
+body .sl-overlay {
+  background: #000;
+}
+
+.simple-lightbox .sl-navigation button,
+.simple-lightbox .sl-close,
+.simple-lightbox .sl-counter {
+  color: #fff;
+  fill: #fff;
+}
