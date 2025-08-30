@@ -16,3 +16,28 @@
 @import url('./badges.css');
 @import url('./back-link.css'); */
 @import url('./footer.css');
+
+.block-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.box-link {
+  display: block;
+  width: 140px;
+  line-height: 60px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.box-link:first-child {
+  background-color: orangered;
+}
+
+.box-link:last-child {
+  background-color: blue;
+}

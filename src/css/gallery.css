@@ -1,19 +1,5 @@
 @import 'simplelightbox/dist/simple-lightbox.min.css';
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #fff;
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
 .gallery {
   width: 100%;
   max-width: 1128px;
