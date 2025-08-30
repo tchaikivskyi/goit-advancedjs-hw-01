@@ -1,2 +1,2 @@
-import"./assets/styles-yD7llOtM.js";console.log("12");
+import"./assets/styles-DvUW3B3E.js";let e={email:"",message:""};const r="feedback-form-state",t={form:document.querySelector(".feedback-form")},o=localStorage.getItem(r);if(o)try{e=JSON.parse(o),t.form.email.value=e.email||"",t.form.message.value=e.message||""}catch(a){console.error("Error parsing saved form data",a)}const m=a=>{a.target.name in e&&(e[a.target.name]=a.target.value.trim(),localStorage.setItem(r,JSON.stringify(e)))},s=a=>{if(a.preventDefault(),!e.email||!e.message){alert("Fill please all fields");return}console.log(e),e={email:"",message:""},localStorage.removeItem(r),t.form.reset()};t.form.addEventListener("input",m);t.form.addEventListener("submit",s);
 //# sourceMappingURL=2-form.js.map

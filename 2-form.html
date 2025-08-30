@@ -5,9 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-01/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <script type="module" crossorigin src="/goit-advancedjs-hw-01/2-form.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/styles-yD7llOtM.js">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-CjfLy6Wt.css">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/styles-DvUW3B3E.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-39kweNnb.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/2-form-X0KMSWnm.css">
   </head>
   <body>
     <header class="header">
@@ -35,6 +43,19 @@
 
     <main>
       <!-- Loads the specified .html file -->
+      <div class="container">
+        <form class="feedback-form" autocomplete="off">
+          <label>
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
